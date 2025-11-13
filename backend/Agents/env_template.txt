@@ -1,0 +1,21 @@
+# OpenAI Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Backend API Configuration
+BACKEND_API_URL=http://localhost:3000/api
+BACKEND_API_KEY=
+
+# Server Configuration
+HOST=0.0.0.0
+PORT=8000
+
+# Model Configuration
+MODEL_NAME=gpt-4o-mini
+MODEL_TEMPERATURE=0
+
+# Logging Configuration
+LOG_DIRECTORY=logs
+
+# Feature Flags
+USE_LOCAL_LLM=false
+

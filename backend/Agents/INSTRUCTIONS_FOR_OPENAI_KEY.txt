@@ -1,0 +1,46 @@
+=============================================================
+SETTING UP YOUR OPENAI API KEY - QUICK INSTRUCTIONS
+=============================================================
+
+1. CREATE .env FILE
+   -------------------
+   In the backend/Agents/ directory, create a file named: .env
+
+2. ADD YOUR API KEY
+   -------------------
+   Copy this into the .env file and replace with your actual key:
+
+   OPENAI_API_KEY=sk-your-actual-openai-api-key-here
+   BACKEND_API_URL=http://localhost:3000/api
+   BACKEND_API_KEY=
+   HOST=0.0.0.0
+   PORT=8000
+   MODEL_NAME=gpt-4o-mini
+   MODEL_TEMPERATURE=0
+   LOG_DIRECTORY=logs
+   USE_LOCAL_LLM=false
+
+3. GET YOUR KEY
+   -------------------
+   If you don't have one:
+   - Go to: https://platform.openai.com/api-keys
+   - Sign in and click "Create new secret key"
+   - Copy the key (starts with sk-...)
+   - Paste it in your .env file
+
+4. VERIFY IT WORKS
+   -------------------
+   cd backend/Agents
+   uvicorn app:app --reload
+
+   Then test with:
+   curl http://localhost:8000/health
+
+5. START USING THE AGENT
+   -------------------
+   Open sample_client.html in your browser
+   Or use the HTTP endpoint with curl/Postman
+
+=============================================================
+IMPORTANT: Never commit .env to git (already in .gitignore)
+=============================================================
