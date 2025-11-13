@@ -6,3 +6,4 @@
 - 🔊 **AI Voice Support Agent**  
   An AI-powered voice support feature that enables users to communicate verbally within the website.  
   The voice agent listens, understands intent, and responds naturally using real-time speech synthesis.
+ي شيشيش يشيشي
